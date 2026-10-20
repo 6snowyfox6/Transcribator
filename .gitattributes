@@ -1,0 +1,13 @@
+# Переводы строк нормализуются в репозитории, но при выгрузке
+# Windows-скрипты обязаны получить CRLF: cmd.exe и PowerShell
+# разбирают файлы построчно и на LF ведут себя непредсказуемо.
+* text=auto
+
+*.bat text eol=crlf
+*.ps1 text eol=crlf
+*.iss text eol=crlf
+
+*.py text eol=lf
+*.md text eol=lf
+
+*.ico binary
