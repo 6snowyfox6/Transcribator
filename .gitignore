@@ -1,0 +1,24 @@
+# Окружение Python — воссоздаётся из requirements.txt
+.venv/
+__pycache__/
+*.py[cod]
+
+# Личное. hf_token.txt — пароль от аккаунта Hugging Face,
+# input и output — записи и готовые расшифровки.
+hf_token.txt
+input/
+output/
+
+# Файлы, которые программа заводит сама при работе
+glossary.txt
+history.jsonl
+gui_settings.json
+machine.json
+gui_error.log
+install.log
+install.done
+progress.txt
+
+# Сборка: установщик выкладывается в Releases, а не в репозиторий
+dist/
+python/

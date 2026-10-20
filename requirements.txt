@@ -1,0 +1,15 @@
+# Основные зависимости. Проверенные версии на 2026-08-28, Python 3.12.
+#
+# PyTorch ставится ОТДЕЛЬНО и первым — с указанием индекса CUDA,
+# иначе pip поставит сборку без поддержки видеокарты:
+#
+#   .venv\Scripts\python.exe -m pip install torch torchaudio ^
+#       --index-url https://download.pytorch.org/whl/cu128
+#   .venv\Scripts\python.exe -m pip install -r requirements.txt
+
+faster-whisper==1.2.1
+pyannote.audio==4.0.7
+python-docx==1.2.0
+rapidfuzz==3.14.6
+tkinterdnd2==0.6.3
+soundfile==0.14.0
